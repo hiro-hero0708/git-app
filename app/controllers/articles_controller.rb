@@ -1,20 +1,9 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @articles = Article.all
-  end
-
-  def show
-  end
-
-  def new
-    @article = Article.new
-  end
 
   # GET /articles/1/edit
-  def edit
-  end
+
 
   # POST /articles
   # POST /articles.json
